@@ -1,2 +1,2 @@
-# ASET-images
-Use Github issues to host images
+# ASET
+Use Github to host additional files.
