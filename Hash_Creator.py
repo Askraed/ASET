@@ -1,4 +1,4 @@
-import hashlib, bcrypt
+import hashlib
 password = input("Input the password you want to hash...\n>")
 print("\nSHA1:\n")
 for i in range(3):
@@ -12,8 +12,3 @@ for i in range(3):
     hash_object = hashlib.md5(setpass)
     guess_pw = hash_object.hexdigest()
     print(guess_pw)
-print("\nBCRYPT:\n")
-for i in range(3):
-    hashed = bcrypt.hashpw(setpass, bcrypt.gensalt(10))
-    print(hashed)
-
